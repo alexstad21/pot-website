@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy &amp; Compliance — Proof of Travel</title>
+<meta name="description" content="Proof of Travel privacy and compliance posture — data minimisation by design, GDPR alignment, and ISO/IEC 27001 staged implementation.">
+<link rel="canonical" href="https://proofoftravel.io/privacy.html">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="n-logo">
+    <img src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/PoT%20logo%20transparent.png/:/rs=h:60,cg:true,m/qt=q:95" alt="Proof of Travel" id="nav-logo-img">
+    <span class="n-logo-text" id="nav-logo-text">Proof of Travel</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="/protocol.html">Protocol</a></li>
+    <li><a href="/consolidators.html">Consolidators</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="/case-study.html">Case Study</a></li>
+    <li><a href="/qa.html">Q&amp;A</a></li>
+  </ul>
+  <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="h-badge"><span class="h-dot"></span>Privacy &amp; Compliance</div>
+    <h1>Data minimisation <em>by design</em>.</h1>
+    <p class="lead">Proof of Travel never writes personal data to the public ledger. The protocol is GDPR-aligned and the operating company is implementing ISO/IEC 27001 in stages.</p>
+  </div>
+</header>
+
+<section>
+  <div class="prose">
+    <h2>Scope</h2>
+    <p>This page summarises how Proof of Travel — and the operating company, Travel Information Network (TIN) — handles data. It is intended as a plain-language overview. A formal privacy notice and Data Processing Addendum (DPA) are available on request.</p>
+
+    <h2>What we do not store on chain</h2>
+    <ul>
+      <li>Passenger names, dates of birth, contact details, or government IDs</li>
+      <li>PNRs, ticket numbers, fare details, or itinerary contents</li>
+      <li>Any other personally identifiable information</li>
+    </ul>
+    <p>The on-chain artefact is restricted to a deterministic commitment hash and structural metadata sufficient for independent verification.</p>
+
+    <h2>What we process off chain</h2>
+    <p>To produce proofs, the protocol needs to evaluate operational signals from source systems. These signals may transit through TIN's verification environment as part of threshold evaluation. Off-chain processing is governed by the following principles:</p>
+    <ul>
+      <li><strong>Minimisation</strong> — we process only what is required to evaluate verification thresholds.</li>
+      <li><strong>Purpose limitation</strong> — signals are used to generate proofs, not for analytics, profiling, or commercial reuse.</li>
+      <li><strong>Retention</strong> — operational signals are retained only as long as required for proof generation and audit traceability, then deleted.</li>
+      <li><strong>Access control</strong> — least-privilege, audited access; no direct passenger data exposure to operators.</li>
+    </ul>
+
+    <h2>GDPR alignment</h2>
+    <p>The protocol is designed for GDPR alignment under the lawful basis of legitimate interest for audit and verification purposes. Where you are a data controller integrating PoT, TIN acts as a data processor under a Data Processing Addendum. We will sign Standard Contractual Clauses where required.</p>
+
+    <h2>ISO/IEC 27001</h2>
+    <p>TIN is implementing an Information Security Management System (ISMS) aligned to ISO/IEC 27001, with certification scoped to the operational components of the verification protocol. Implementation is staged; current status is available on request to enterprise integrators and auditors.</p>
+
+    <h2>Cookies &amp; analytics on this site</h2>
+    <p>This website is intentionally minimal. It does not use tracking cookies, behavioural advertising, or third-party analytics. Fonts are loaded from Google Fonts; you may block the request if you prefer.</p>
+
+    <h2>Right to erasure &amp; the public ledger</h2>
+    <p>Because no personal data is written to the public ledger, GDPR right-to-erasure obligations apply only to off-chain operational data, which is deleted on request and per the retention policy. The on-chain commitment hash is intentionally non-reversible to personal data.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions, DPA requests, and ISO/IEC 27001 status enquiries: <a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a>.</p>
+
+    <p style="margin-top:2rem;font-size:.75rem;color:var(--slate-light)">This page is informational and does not constitute legal advice. Last reviewed: 2026.</p>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <div class="cta-badge">Compliance &amp; integrators</div>
+    <h2 class="cta-title">Need our DPA or ISO status report?</h2>
+    <p class="cta-sub">We share formal documentation with integrators, auditors, and enterprise customers under NDA where appropriate.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@proofoftravel.io" class="btn-w">Request documents →</a>
+      <a href="/whitepapers.html" class="btn-wg">Read the whitepaper</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="f-copy">© 2026 Proof of Travel — Neutral verification protocol · Operated by TIN</span>
+  <ul class="f-links">
+    <li><a href="/privacy.html">Privacy &amp; compliance</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a></li>
+  </ul>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

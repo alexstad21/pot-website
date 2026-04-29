@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q&amp;A — Proof of Travel</title>
+<meta name="description" content="Frequently asked questions about the Proof of Travel verification protocol — what it is, what it isn't, how it integrates, and how it handles privacy.">
+<link rel="canonical" href="https://proofoftravel.io/qa.html">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="n-logo">
+    <img src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/PoT%20logo%20transparent.png/:/rs=h:60,cg:true,m/qt=q:95" alt="Proof of Travel" id="nav-logo-img">
+    <span class="n-logo-text" id="nav-logo-text">Proof of Travel</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="/protocol.html">Protocol</a></li>
+    <li><a href="/consolidators.html">Consolidators</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="/case-study.html">Case Study</a></li>
+    <li><a href="/qa.html" class="active">Q&amp;A</a></li>
+  </ul>
+  <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="h-badge"><span class="h-dot"></span>Frequently asked</div>
+    <h1>Questions about <em>Proof of Travel</em>.</h1>
+    <p class="lead">Common questions about the protocol, the integration model, privacy, compliance, and what we do — and don't — do.</p>
+  </div>
+</header>
+
+<section>
+  <div class="faq">
+
+    <details open>
+      <summary>What is Proof of Travel?</summary>
+      <p>Proof of Travel (PoT) is a neutral verification protocol that produces independent, deterministic, cryptographically anchored proofs of travel lifecycle events — issuance, departure, arrival, reconciliation, refund. It is not a booking system, not a settlement system, and not a replacement for IATA or ARC reconciliation.</p>
+    </details>
+
+    <details>
+      <summary>Who operates the protocol?</summary>
+      <p>PoT is operated by Travel Information Network (TIN). The protocol itself is designed to be neutral and independently verifiable, and the optional AERO incentive layer is intended to support broader decentralisation over time.</p>
+    </details>
+
+    <details>
+      <summary>What data goes on the public ledger?</summary>
+      <p>Only a hash and a small set of structural metadata. No PNRs, ticket numbers, names, dates of birth, or itineraries appear on the public ledger. The protocol is GDPR-aligned by design and uses data minimisation as a core principle.</p>
+    </details>
+
+    <details>
+      <summary>How is a proof verified?</summary>
+      <p>A consumer takes the public anchor (transaction hash and block reference) and a deterministic re-derivation of the inputs, recomputes the commitment hash, and confirms it matches what is on chain. There is no trusted third party in the verification path.</p>
+    </details>
+
+    <details>
+      <summary>What if source systems disagree?</summary>
+      <p>No proof is generated. Conservatism is a deliberate design choice — silence is preferred to a false positive. The absence of a proof is itself a useful operational signal in audit and dispute contexts.</p>
+    </details>
+
+    <details>
+      <summary>How does PoT integrate with my existing infrastructure?</summary>
+      <p>Three integration paths are common: a read-only operational signal feed, a reference API for retrieving proofs, and an optional embedded verifier widget. None of these modify your existing booking, ticketing, or settlement systems.</p>
+    </details>
+
+    <details>
+      <summary>Is PoT compliant with GDPR?</summary>
+      <p>The protocol is designed for GDPR alignment. Personal data is never written to the public ledger, and the off-chain components follow data minimisation and purpose-limitation principles. Detailed compliance documentation is available on request.</p>
+    </details>
+
+    <details>
+      <summary>What about ISO/IEC 27001?</summary>
+      <p>TIN is implementing ISO/IEC 27001 in stages, with formal certification scoped to the operational components of the verification protocol. Status updates are provided on request to enterprise integrators and auditors.</p>
+    </details>
+
+    <details>
+      <summary>What is AERO?</summary>
+      <p>AERO is an optional incentive and decentralisation layer that sits alongside — but is not part of — the core verification protocol. The verification protocol is fully functional without AERO. AERO exists to support broader decentralisation goals over time.</p>
+    </details>
+
+    <details>
+      <summary>What blockchain do you use?</summary>
+      <p>Public Ethereum (and L2s where appropriate for cost and throughput). The choice of public infrastructure is deliberate: it ensures anchors are independently verifiable without requiring trust in the protocol operator.</p>
+    </details>
+
+    <details>
+      <summary>Can I use PoT for chargeback defence?</summary>
+      <p>Yes. Issuance, departure, and reconciliation proofs are designed to be admissible inputs to chargeback defence workflows. We can introduce you to acquirers and insurers already familiar with the proof format.</p>
+    </details>
+
+    <details>
+      <summary>How do I get started?</summary>
+      <p>Write to <a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a> with a brief note about your role and use case. We'll respond with the relevant whitepaper, integration guide, and proposed next steps.</p>
+    </details>
+
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <div class="cta-badge">Couldn't find your question?</div>
+    <h2 class="cta-title">Talk to the team directly</h2>
+    <p class="cta-sub">We respond within one business day to integrators, auditors, insurers, and operators.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@proofoftravel.io" class="btn-w">Get in touch →</a>
+      <a href="/whitepapers.html" class="btn-wg">Read the whitepaper</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="f-copy">© 2026 Proof of Travel — Neutral verification protocol · Operated by TIN</span>
+  <ul class="f-links">
+    <li><a href="/privacy.html">Privacy &amp; compliance</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a></li>
+  </ul>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

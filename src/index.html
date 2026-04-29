@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proof of Travel — Neutral Verification Protocol</title>
+<meta name="description" content="A neutral verification protocol for real-world travel events. PoT cryptographically anchors verified travel lifecycle events without altering existing booking, ticketing, or settlement workflows.">
+<link rel="canonical" href="https://proofoftravel.io/">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a href="/" class="n-logo">
+    <img
+      src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/PoT%20logo%20transparent.png/:/rs=h:60,cg:true,m/qt=q:95"
+      alt="Proof of Travel"
+      id="nav-logo-img">
+    <span class="n-logo-text" id="nav-logo-text">Proof of Travel</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="/protocol.html">Protocol</a></li>
+    <li><a href="/consolidators.html">Consolidators</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="/case-study.html">Case Study</a></li>
+    <li><a href="/qa.html">Q&amp;A</a></li>
+  </ul>
+  <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero-wrap">
+  <div class="hero">
+    <div>
+      <div class="h-badge"><span class="h-dot"></span>Live in Production</div>
+      <h1>A neutral verification protocol for <em>real-world</em> travel events.</h1>
+      <p class="h-sub">PoT cryptographically anchors verified travel lifecycle events — independently, without altering existing booking, ticketing, or settlement workflows.</p>
+      <div class="h-actions">
+        <a href="/whitepapers.html" class="btn-p">Read the Whitepaper →</a>
+        <a href="#protocol" class="btn-g">How it works ↓</a>
+      </div>
+    </div>
+    <div>
+      <div class="feed-card">
+        <div class="feed-header">
+          <span class="feed-title">Live Verification Feed</span>
+          <span class="feed-live"><span class="feed-pulse"></span>Active</span>
+        </div>
+        <div class="feed-body">
+          <div class="ev-row">
+            <div class="ev-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.5H2M22 16.5l-4-4M22 16.5l-4 4M2 7.5h20M2 7.5l4-4M2 7.5l4 4"/></svg>
+            </div>
+            <div class="ev-info">
+              <div class="ev-name">Ticket Issued — TK2281</div>
+              <div class="ev-hash">0x4a3f…c91b · block 19,847,201</div>
+            </div>
+            <span class="ev-badge">Verified</span>
+          </div>
+          <div class="ev-row">
+            <div class="ev-icon">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M5 12l4-4M5 12l4 4"/></svg>
+            </div>
+            <div class="ev-info">
+              <div class="ev-name">Departure Confirmed — LH441</div>
+              <div class="ev-hash">0x7b2e…0d44 · block 19,847,198</div>
+            </div>
+            <span class="ev-badge">Verified</span>
+          </div>
+          <div class="ev-row">
+            <div class="ev-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M19 12l-4 4M19 12l-4-4"/></svg>
+            </div>
+            <div class="ev-info">
+              <div class="ev-name">Arrival Anchored — BA007</div>
+              <div class="ev-hash">0x1c9a…f72c · block 19,847,195</div>
+            </div>
+            <span class="ev-badge">Verified</span>
+          </div>
+          <div class="ev-row">
+            <div class="ev-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </div>
+            <div class="ev-info">
+              <div class="ev-name">Post-Reconciliation — QF1</div>
+              <div class="ev-hash">0xd84b…3e5a · block 19,847,190</div>
+            </div>
+            <span class="ev-badge">Verified</span>
+          </div>
+        </div>
+        <div class="feed-foot">
+          <span class="feed-foot-l">Public blockchain infrastructure</span>
+          <span class="feed-foot-r">ETH Mainnet</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="t-item">
+      <div class="t-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,3"/></svg></div>
+      <span class="t-text">GDPR aligned — data minimisation by design</span>
+    </div>
+    <div class="t-item">
+      <div class="t-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,3"/></svg></div>
+      <span class="t-text">ISO/IEC 27001 staged implementation</span>
+    </div>
+    <div class="t-item">
+      <div class="t-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,3"/></svg></div>
+      <span class="t-text">No passenger data stored or exposed</span>
+    </div>
+    <div class="t-item">
+      <div class="t-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4.5,7.5 8,3"/></svg></div>
+      <span class="t-text">Independent — no single system dependency</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── LOGO / COMPATIBILITY STRIP ── -->
+<div class="logo-strip">
+  <div class="logo-strip-inner">
+    <p class="ls-label">Compatible with existing travel infrastructure</p>
+    <div class="ls-logos">
+      <div class="ls-logo-pill"><span class="ls-logo-text">Amadeus GDS</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">Sabre</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">Travelport</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">IATA BSP</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">ARC</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">Blockchain / ETH</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROTOCOL OVERVIEW VIDEO ── -->
+<div class="photo-section">
+  <div class="photo-inner">
+    <div>
+      <p class="s-eye">Protocol Overview</p>
+      <h2 class="s-title">An independent audit layer for the travel industry</h2>
+      <p class="s-body">PoT operates post-issuance and post-reconciliation — only anchoring events after verified operational signals are available. Deterministic, auditable, conservative.</p>
+      <a href="/protocol.html" class="btn-p">Watch the overview →</a>
+    </div>
+    <div class="photo-frame video-thumb" onclick="window.open('https://proofoftravel.io','_blank')">
+      <img
+        src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/thumbnails/thumbnail-03c2ec2c-dcd7-4452-ae8f-87f1336d3dd1.png"
+        alt="Protocol overview video"
+        onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg><span>Video overview</span></div>'">
+      <div class="video-play">
+        <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── HOW IT WORKS ── -->
+<section id="protocol">
+  <p class="s-eye">How it works</p>
+  <h2 class="s-title">Four steps from signal to verified proof</h2>
+  <p class="s-body">Every proof is conservative, deterministic, and verifiable — designed for audit, insurance, and compliance use cases.</p>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-title">Event signal received</div>
+      <div class="step-body">Operational signals from agencies, GDSs, airlines, and settlement frameworks are captured after issuance and reconciliation.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-title">Verification threshold met</div>
+      <div class="step-body">Conservative thresholds designed for audit, insurance, and compliance use cases are evaluated before any proof is generated.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-title">Cryptographic anchor created</div>
+      <div class="step-body">A tamper-resistant reference is written to public blockchain infrastructure — immutable and independently auditable.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-title">Proof available for audit</div>
+      <div class="step-body">Downstream parties — insurers, auditors, compliance teams — can verify the event without relying on any single system.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── CASE STUDY ── -->
+<section>
+  <p class="s-eye">Case study</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center">
+    <div class="photo-frame video-thumb" onclick="window.open('https://proofoftravel.io','_blank')">
+      <img
+        src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/thumbnails/thumbnail-a51deb93-3d93-4583-94ec-e76074f748bd.png"
+        alt="Case study video"
+        onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg><span>Case study video</span></div>'">
+      <div class="video-play">
+        <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+      </div>
+    </div>
+    <div>
+      <h2 class="s-title">Airspace disruption &amp; data resilience</h2>
+      <p class="s-body">Sudden airspace closures cause travel records to diverge across airline, GDS, and consolidator systems. PoT provides an independent, verifiable timeline of ticket lifecycle events — helping organisations understand what happened and when, even during large-scale disruption.</p>
+      <a href="/case-study.html" class="btn-p">View case study →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── USE CASES ── -->
+<section>
+  <p class="s-eye">Use cases</p>
+  <h2 class="s-title">Built for the systems that run travel</h2>
+  <p class="s-body">PoT integrates alongside existing infrastructure without disrupting commercial workflows.</p>
+  <div class="use-grid">
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Audit &amp; compliance</div>
+        <div class="use-body">Provide an independent, verifiable record of ticket lifecycle events that regulators and auditors can trust.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Insurance verification</div>
+        <div class="use-body">Anchor proof of departure, arrival, and cancellation events for accurate, dispute-resistant claims processing.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Airspace disruption</div>
+        <div class="use-body">When systems diverge during mass cancellations, PoT provides an authoritative timeline of what happened and when.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Cross-system reconciliation</div>
+        <div class="use-body">Resolve discrepancies across GDS, airline, and agency records with a neutral, cryptographically verified source of truth.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Consolidator integration</div>
+        <div class="use-body">Enable consolidators to surface verifiable, post-reconciliation proof references without altering existing data flows.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+      </div>
+      <div>
+        <div class="use-title">Decentralised verification</div>
+        <div class="use-body">The optional AERO layer introduces usage incentives and future decentralisation, without changing the core protocol.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <div class="cta-badge">Operated by Travel Information Network (TIN)</div>
+    <h2 class="cta-title">Ready to integrate PoT into your infrastructure?</h2>
+    <p class="cta-sub">Reach out to discuss protocol integration, consolidator access, or enterprise deployment.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@proofoftravel.io" class="btn-w">Get in touch →</a>
+      <a href="/whitepapers.html" class="btn-wg">Read the whitepaper</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span class="f-copy">© 2026 Proof of Travel — Neutral verification protocol · Operated by TIN</span>
+  <ul class="f-links">
+    <li><a href="/privacy.html">Privacy &amp; compliance</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a></li>
+  </ul>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

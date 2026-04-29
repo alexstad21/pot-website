@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocol — Proof of Travel</title>
+<meta name="description" content="The Proof of Travel verification protocol — how operational signals become deterministic, cryptographically anchored proofs of travel events.">
+<link rel="canonical" href="https://proofoftravel.io/protocol.html">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="n-logo">
+    <img src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/PoT%20logo%20transparent.png/:/rs=h:60,cg:true,m/qt=q:95" alt="Proof of Travel" id="nav-logo-img">
+    <span class="n-logo-text" id="nav-logo-text">Proof of Travel</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="/protocol.html" class="active">Protocol</a></li>
+    <li><a href="/consolidators.html">Consolidators</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="/case-study.html">Case Study</a></li>
+    <li><a href="/qa.html">Q&amp;A</a></li>
+  </ul>
+  <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="h-badge"><span class="h-dot"></span>Protocol</div>
+    <h1>How <em>Proof of Travel</em> turns operational signals into verified events.</h1>
+    <p class="lead">A deterministic, conservative verification layer designed to be independent of any single airline, GDS, agency, or settlement system.</p>
+  </div>
+</header>
+
+<section>
+  <p class="s-eye">How it works</p>
+  <h2 class="s-title">From operational signal to public anchor</h2>
+  <p class="s-body">Each step is conservative, auditable, and free of personally identifiable information.</p>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-title">Signal capture</div>
+      <div class="step-body">Issuance, departure, arrival, and reconciliation signals are captured from multiple independent sources.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-title">Verification thresholds</div>
+      <div class="step-body">Conservative agreement rules across data sources must be satisfied before a proof is considered valid.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-title">Cryptographic anchoring</div>
+      <div class="step-body">A hash reference is written to public blockchain infrastructure — independently auditable and tamper-resistant.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-title">Proof exposure</div>
+      <div class="step-body">Audit, insurance, and compliance consumers can verify a proof using only the public anchor and a deterministic re-derivation.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <div class="prose">
+    <p class="s-eye">Design principles</p>
+    <h2>Neutrality, determinism, minimalism</h2>
+    <p>Proof of Travel is intentionally narrow. The protocol does not store passenger data, it does not interfere with commercial workflows, and it does not require trust in any single operator. Instead, it provides a thin, deterministic layer that turns multi-source operational agreement into independently verifiable references.</p>
+
+    <h3>Neutrality</h3>
+    <p>No participant — airline, GDS, agency, consolidator, settlement framework, or operator — is privileged in the verification logic. A proof is valid only if independent signals agree.</p>
+
+    <h3>Determinism</h3>
+    <p>Given the same set of input signals, the protocol produces the same proof. There is no probabilistic logic, no machine-learned scoring, and no off-protocol arbitration. Auditors can re-derive a proof and confirm it matches the public anchor.</p>
+
+    <h3>Data minimisation</h3>
+    <p>The on-chain artefact contains only a hash and a small set of structural metadata. No PNRs, ticket numbers, names, dates of birth, or itineraries appear on the public ledger. The protocol is GDPR-aligned by design.</p>
+
+    <h3>Conservatism</h3>
+    <p>If signals disagree, no proof is generated. Silence is preferred to a false positive. This is what makes PoT defensible in audit, insurance, and compliance contexts.</p>
+
+    <h2>What a proof contains</h2>
+    <p>A PoT proof is a small, structured record consisting of:</p>
+    <ul>
+      <li>A <strong>type</strong> identifying the lifecycle event (issuance, departure, arrival, reconciliation, refund, etc.).</li>
+      <li>A <strong>commitment hash</strong> derived deterministically from the verified signal set.</li>
+      <li>A <strong>schema version</strong> so older proofs remain re-derivable as the protocol evolves.</li>
+      <li>A <strong>public anchor</strong> — a transaction hash and block reference on the underlying chain.</li>
+    </ul>
+
+    <h2>What it is not</h2>
+    <p>PoT is not a booking system, a settlement system, an identity system, or a replacement for IATA/ARC reconciliation. It is an independent audit layer that sits alongside existing infrastructure.</p>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <div class="cta-badge">Talk to the team</div>
+    <h2 class="cta-title">Want to integrate the protocol?</h2>
+    <p class="cta-sub">We work with airlines, consolidators, agencies, insurers, and auditors on protocol integration.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@proofoftravel.io" class="btn-w">Get in touch →</a>
+      <a href="/whitepapers.html" class="btn-wg">Read the whitepaper</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="f-copy">© 2026 Proof of Travel — Neutral verification protocol · Operated by TIN</span>
+  <ul class="f-links">
+    <li><a href="/privacy.html">Privacy &amp; compliance</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a></li>
+  </ul>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

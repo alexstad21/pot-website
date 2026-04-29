@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consolidators — Proof of Travel</title>
+<meta name="description" content="How travel consolidators can integrate Proof of Travel to surface verifiable, post-reconciliation proof references without altering existing data flows.">
+<link rel="canonical" href="https://proofoftravel.io/consolidators.html">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="n-logo">
+    <img src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/PoT%20logo%20transparent.png/:/rs=h:60,cg:true,m/qt=q:95" alt="Proof of Travel" id="nav-logo-img">
+    <span class="n-logo-text" id="nav-logo-text">Proof of Travel</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="/protocol.html">Protocol</a></li>
+    <li><a href="/consolidators.html" class="active">Consolidators</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="/case-study.html">Case Study</a></li>
+    <li><a href="/qa.html">Q&amp;A</a></li>
+  </ul>
+  <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="h-badge"><span class="h-dot"></span>For Consolidators</div>
+    <h1>Add a <em>verifiable proof layer</em> to your consolidator workflow.</h1>
+    <p class="lead">Surface independent, post-reconciliation proofs of ticket lifecycle events to your downstream agencies — without changing how tickets are issued, settled, or reported.</p>
+    <div class="h-actions" style="margin-top:1.5rem">
+      <a href="mailto:info@proofoftravel.io" class="btn-p">Talk to integration team →</a>
+      <a href="/protocol.html" class="btn-g">Read the protocol ↗</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <p class="s-eye">Why consolidators</p>
+  <h2 class="s-title">A neutral source of truth across your downstream network</h2>
+  <p class="s-body">Consolidators sit at a unique vantage point in the travel value chain. PoT formalises that position — turning multi-source operational agreement into proofs your agencies and partners can independently verify.</p>
+  <div class="use-grid">
+    <div class="use-card">
+      <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div>
+        <div class="use-title">Trusted ticket records</div>
+        <div class="use-body">Give downstream agencies cryptographic proof that a ticket was issued, flown, refunded, or reconciled.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg></div>
+      <div>
+        <div class="use-title">Reconciliation evidence</div>
+        <div class="use-body">Resolve disputes faster with a deterministic, multi-source verification trail.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div>
+        <div class="use-title">Insurance &amp; chargeback defence</div>
+        <div class="use-body">Anchor proof references that downstream insurers and acquirers can independently verify.</div>
+      </div>
+    </div>
+    <div class="use-card">
+      <div class="use-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <div>
+        <div class="use-title">Disruption resilience</div>
+        <div class="use-body">During mass cancellations, PoT preserves an authoritative timeline even when source systems diverge.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <p class="s-eye">Integration model</p>
+  <h2 class="s-title">Three lightweight integration paths</h2>
+  <p class="s-body">All paths are non-invasive. PoT does not modify your booking, ticketing, or settlement records — it produces independent proof references alongside them.</p>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-title">Read-only feed</div>
+      <div class="step-body">PoT consumes operational signals from your existing back-office systems via a read-only feed or scheduled export.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-title">Reference API</div>
+      <div class="step-body">Your applications retrieve proof references via a simple REST API and surface them to downstream agencies and partners.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-title">Embedded verifier</div>
+      <div class="step-body">Optional embeddable verifier widget for partner portals and customer-facing reconciliation tools.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <div class="prose">
+    <h2>What you keep</h2>
+    <p>You keep your existing GDS, mid-office, settlement, and reporting platforms. PoT does not replace any of them.</p>
+
+    <h2>What you gain</h2>
+    <p>You gain a neutral, cryptographically anchored audit trail that downstream agencies, insurers, and auditors can independently verify — without exposing any passenger data.</p>
+
+    <h2>What it costs</h2>
+    <p>Integration is cooperative. Reach out and we'll walk you through the integration scope, typical timelines, and commercial model. Most consolidator deployments take a single quarter end-to-end.</p>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-inner">
+    <div class="cta-badge">Consolidator program</div>
+    <h2 class="cta-title">Bring verifiable proof to your network</h2>
+    <p class="cta-sub">We're onboarding consolidator partners now. Reach out to discuss scope and timing.</p>
+    <div class="cta-btns">
+      <a href="mailto:info@proofoftravel.io" class="btn-w">Contact integration team →</a>
+      <a href="/whitepapers.html" class="btn-wg">Read the whitepaper</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="f-copy">© 2026 Proof of Travel — Neutral verification protocol · Operated by TIN</span>
+  <ul class="f-links">
+    <li><a href="/privacy.html">Privacy &amp; compliance</a></li>
+    <li><a href="/whitepapers.html">Whitepapers</a></li>
+    <li><a href="mailto:info@proofoftravel.io">info@proofoftravel.io</a></li>
+  </ul>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

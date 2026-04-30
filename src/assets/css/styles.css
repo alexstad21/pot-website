@@ -19,8 +19,8 @@
   --slate-light:#8a9ab0;
   --border:#dde2ea;
   --border-teal:rgba(0,168,135,0.25);
-  --fh:'Syne',sans-serif;
-  --fb:'DM Sans',sans-serif;
+  --fh:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+  --fb:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
 }
 
 html{scroll-behavior:smooth}
@@ -33,11 +33,11 @@ nav{
   border-bottom:1px solid var(--border);
   padding:0 2rem;
   display:flex;align-items:center;justify-content:space-between;
-  height:52px;
+  height:76px;
 }
-.n-logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
-.n-logo img{height:28px;width:auto;object-fit:contain;display:block}
-.n-logo-text{font-family:var(--fh);font-weight:700;font-size:.95rem;color:var(--navy);letter-spacing:-.01em;white-space:nowrap;display:none}
+.n-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.n-logo img{height:56px;width:auto;object-fit:contain;display:block}
+.n-logo-text{font-family:var(--fh);font-weight:700;font-size:1.1rem;color:var(--navy);letter-spacing:-.01em;white-space:nowrap;display:none}
 .n-links{display:flex;gap:1.25rem;list-style:none;align-items:center}
 .n-links a{font-size:.7rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--slate);text-decoration:none;white-space:nowrap;transition:color .15s}
 .n-links a:hover,.n-links a.active{color:var(--navy)}
@@ -73,9 +73,9 @@ nav{
 .h-dot{width:6px;height:6px;border-radius:50%;background:var(--teal-mid);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 .hero h1{
-  font-family:var(--fh);font-size:clamp(1.9rem,3vw,2.7rem);
-  font-weight:800;line-height:1.1;letter-spacing:-.025em;
-  color:var(--navy);margin-bottom:.9rem;
+  font-family:var(--fh);font-size:clamp(2rem,3.2vw,2.9rem);
+  font-weight:700;line-height:1.2;letter-spacing:-.02em;
+  color:var(--navy);margin-bottom:1rem;
 }
 .hero h1 em{font-style:normal;color:var(--teal)}
 .h-sub{font-size:.875rem;color:var(--slate);max-width:400px;margin-bottom:1.75rem;line-height:1.8;font-weight:300}
@@ -100,9 +100,9 @@ nav{
   position:relative;z-index:1;
 }
 .page-header h1{
-  font-family:var(--fh);font-size:clamp(1.7rem,2.6vw,2.3rem);
-  font-weight:800;line-height:1.15;letter-spacing:-.02em;
-  color:var(--navy);margin-bottom:.7rem;max-width:680px;
+  font-family:var(--fh);font-size:clamp(1.8rem,2.8vw,2.5rem);
+  font-weight:700;line-height:1.2;letter-spacing:-.02em;
+  color:var(--navy);margin-bottom:.8rem;max-width:680px;
 }
 .page-header h1 em{font-style:normal;color:var(--teal)}
 .page-header .lead{font-size:.9rem;color:var(--slate);max-width:560px;line-height:1.8;font-weight:300}
@@ -186,18 +186,41 @@ nav{
 .play-btn:hover{opacity:1}
 .play-btn svg{width:16px;height:16px;fill:#fff;margin-left:3px}
 
+/* ── INLINE HTML5 VIDEO ── */
+.video-frame{
+  border-radius:10px;overflow:hidden;border:1px solid var(--border);
+  aspect-ratio:16/10;background:#000;position:relative;
+}
+.video-frame video{
+  width:100%;height:100%;object-fit:cover;display:block;background:#000;
+}
+
+/* ── CASE STUDY ROW (alternating layout) ── */
+.cs-row{
+  display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+  align-items:center;
+  padding:2rem 0;
+}
+.cs-row + .cs-row{border-top:1px solid var(--border)}
+.cs-row.reverse .cs-media{order:2}
+.cs-row.reverse .cs-text{order:1}
+.cs-num{font-family:var(--fh);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem}
+.cs-title{font-family:var(--fh);font-size:clamp(1.2rem,1.8vw,1.5rem);font-weight:700;line-height:1.3;color:var(--navy);letter-spacing:-.015em;margin-bottom:.75rem}
+.cs-body{font-size:.88rem;color:var(--slate);line-height:1.85;font-weight:300}
+.cs-body p + p{margin-top:.7rem}
+
 /* ── SECTIONS ── */
 section{max-width:1100px;margin:0 auto;padding:2.5rem 2rem}
 .s-eye{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem}
-.s-title{font-family:var(--fh);font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:700;line-height:1.2;letter-spacing:-.02em;color:var(--navy);margin-bottom:.65rem;max-width:540px}
+.s-title{font-family:var(--fh);font-size:clamp(1.5rem,2.3vw,2rem);font-weight:600;line-height:1.25;letter-spacing:-.015em;color:var(--navy);margin-bottom:.75rem;max-width:560px}
 .s-body{font-size:.83rem;color:var(--slate);max-width:500px;line-height:1.8;font-weight:300;margin-bottom:1.75rem}
 .divider{border:none;border-top:1px solid var(--border);margin:0}
 
 /* ── PROSE (long-form copy on inner pages) ── */
 .prose{max-width:720px}
-.prose h2{font-family:var(--fh);font-size:1.35rem;font-weight:700;color:var(--navy);letter-spacing:-.02em;margin:2rem 0 .65rem}
+.prose h2{font-family:var(--fh);font-size:1.4rem;font-weight:700;line-height:1.3;color:var(--navy);letter-spacing:-.015em;margin:2rem 0 .75rem}
 .prose h2:first-child{margin-top:0}
-.prose h3{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--navy);letter-spacing:-.015em;margin:1.5rem 0 .5rem}
+.prose h3{font-family:var(--fh);font-size:1.1rem;font-weight:700;line-height:1.3;color:var(--navy);letter-spacing:-.01em;margin:1.5rem 0 .55rem}
 .prose p{font-size:.88rem;color:var(--slate);line-height:1.85;font-weight:300;margin-bottom:1rem}
 .prose ul,.prose ol{padding-left:1.25rem;margin-bottom:1rem}
 .prose li{font-size:.88rem;color:var(--slate);line-height:1.8;font-weight:300;margin-bottom:.4rem}
@@ -253,7 +276,7 @@ section{max-width:1100px;margin:0 auto;padding:2.5rem 2rem}
 }
 .cta-inner{max-width:680px;margin:0 auto;text-align:center}
 .cta-badge{display:inline-flex;align-items:center;gap:7px;font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:.32rem .85rem;border-radius:100px;margin-bottom:1rem}
-.cta-title{font-family:var(--fh);font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:800;color:#fff;margin-bottom:.65rem;letter-spacing:-.02em}
+.cta-title{font-family:var(--fh);font-size:clamp(1.5rem,2.3vw,2rem);font-weight:700;line-height:1.25;color:#fff;margin-bottom:.75rem;letter-spacing:-.015em}
 .cta-sub{font-size:.83rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem;line-height:1.75;font-weight:300}
 .cta-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
 
@@ -265,8 +288,13 @@ footer{background:var(--bg-white);border-top:1px solid var(--border);padding:1.1
 .f-links a:hover{color:var(--navy)}
 
 /* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .n-links{gap:.9rem}
+  .n-links a{font-size:.65rem}
+}
 @media(max-width:768px){
-  nav{padding:0 1rem}
+  nav{padding:0 1rem;height:64px}
+  .n-logo img{height:44px}
   .n-links{display:none}
   .hero{grid-template-columns:1fr;gap:1.5rem;padding:2rem 1rem}
   .photo-inner{grid-template-columns:1fr;padding:1.5rem 1rem}
@@ -275,6 +303,9 @@ footer{background:var(--bg-white);border-top:1px solid var(--border);padding:1.1
   .page-header-inner{padding:2rem 1rem 1.5rem}
   .steps-grid{grid-template-columns:1fr 1fr}
   .use-grid{grid-template-columns:1fr}
+  .cs-row{grid-template-columns:1fr;gap:1.25rem;padding:1.5rem 0}
+  .cs-row.reverse .cs-media{order:0}
+  .cs-row.reverse .cs-text{order:1}
   footer{padding:1rem;flex-direction:column;align-items:flex-start}
 }
 @media(max-width:480px){

@@ -7,7 +7,7 @@
 <meta name="description" content="Frequently asked questions about the Proof of Travel verification protocol — what it is, what it isn't, how it integrates, and how it handles privacy.">
 <link rel="canonical" href="https://proofoftravel.io/qa.html">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -23,6 +23,7 @@
     <li><a href="/whitepapers.html">Whitepapers</a></li>
     <li><a href="/case-study.html">Case Study</a></li>
     <li><a href="/qa.html" class="active">Q&amp;A</a></li>
+    <li><a href="/privacy.html">Privacy</a></li>
   </ul>
   <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
 </nav>
@@ -35,7 +36,25 @@
   </div>
 </header>
 
-<section>
+<!-- ── Q&A WITH THE ARCHITECT VIDEO ── -->
+<div class="photo-section">
+  <div class="photo-inner">
+    <div>
+      <p class="s-eye">Watch first</p>
+      <h2 class="s-title">Q&amp;A with the architect</h2>
+      <p class="s-body">A short conversation covering the most common questions about the protocol, the verification model, and the design choices behind keeping personal data off the public ledger.</p>
+      <a href="#faq" class="btn-p">Jump to written FAQ ↓</a>
+    </div>
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline poster="/assets/videos/qa.jpg">
+        <source src="/assets/videos/qa.mp4" type="video/mp4">
+        Your browser doesn't support inline video.
+      </video>
+    </div>
+  </div>
+</div>
+
+<section id="faq">
   <div class="faq">
 
     <details open>
@@ -85,7 +104,7 @@
 
     <details>
       <summary>What blockchain do you use?</summary>
-      <p>Public Ethereum (and L2s where appropriate for cost and throughput). The choice of public infrastructure is deliberate: it ensures anchors are independently verifiable without requiring trust in the protocol operator.</p>
+      <p>Polygon — a public, EVM-compatible network. We chose Polygon for low transaction cost and high throughput while remaining tooling-compatible with the broader Ethereum ecosystem. The choice of public infrastructure is deliberate: it ensures anchors are independently verifiable without requiring trust in the protocol operator.</p>
     </details>
 
     <details>

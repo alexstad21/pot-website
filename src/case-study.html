@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study — Airspace Disruption &amp; Data Resilience | Proof of Travel</title>
-<meta name="description" content="How an independent verification protocol preserves an authoritative timeline of ticket lifecycle events during large-scale airspace disruption.">
+<title>Case Studies — Proof of Travel</title>
+<meta name="description" content="Five real-world Proof of Travel case studies — independent verification of journeys, corporate audit, long-lived evidence, dispute resolution, and ecosystem-level oversight.">
 <link rel="canonical" href="https://proofoftravel.io/case-study.html">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -21,89 +21,147 @@
     <li><a href="/protocol.html">Protocol</a></li>
     <li><a href="/consolidators.html">Consolidators</a></li>
     <li><a href="/whitepapers.html">Whitepapers</a></li>
-    <li><a href="/case-study.html" class="active">Case Study</a></li>
+    <li><a href="/case-study.html" class="active">Case Studies</a></li>
     <li><a href="/qa.html">Q&amp;A</a></li>
+    <li><a href="/privacy.html">Privacy</a></li>
   </ul>
   <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
 </nav>
 
 <header class="page-header">
   <div class="page-header-inner">
-    <div class="h-badge"><span class="h-dot"></span>Case Study</div>
-    <h1>Airspace disruption &amp; <em>data resilience</em>.</h1>
-    <p class="lead">When sudden airspace closures cause travel records to diverge across airline, GDS, and consolidator systems, an independent verification protocol becomes the authoritative timeline.</p>
+    <div class="h-badge"><span class="h-dot"></span>Case Studies</div>
+    <h1>Real-world <em>proof of travel</em> in action.</h1>
+    <p class="lead">Five short scenarios showing how an independent, cryptographically verifiable evidence layer holds up across individual verification, corporate audit, dispute resolution, and ecosystem-level oversight.</p>
   </div>
 </header>
 
+<!-- ── INTRO / PREAMBLE ── -->
 <section>
   <div class="prose">
-    <h2>The problem</h2>
-    <p>Mass airspace closures — whether caused by geopolitical events, natural phenomena, or technical incidents — produce a cascade of partial cancellations, rebookings, and refund flows. In the hours and days that follow, the same ticket can appear with different statuses across:</p>
+    <p>Proof of Travel (PoT) is an independent verification protocol designed to provide long-term, cryptographically verifiable evidence of travel events — without relying on a single system, organisation, or database.</p>
+    <p>The following case studies illustrate how PoT can be used in practice across different scenarios, including individual verification, corporate audit, dispute resolution, and ecosystem-level oversight.</p>
+    <p>These examples are intended to demonstrate:</p>
     <ul>
-      <li>The airline's departure control system</li>
-      <li>The GDS booking record</li>
-      <li>The consolidator's mid-office</li>
-      <li>The agency's back-office</li>
-      <li>The settlement framework's reconciliation files</li>
+      <li>how independent verification works,</li>
+      <li>what PoT does — and does not — record,</li>
+      <li>and why a neutral verification layer becomes more valuable as systems evolve over time.</li>
     </ul>
-    <p>That divergence is operationally normal — each system is doing its job — but it makes downstream processes (insurance claims, regulatory reporting, customer disputes, chargeback defence) difficult and slow.</p>
-
-    <h2>The PoT contribution</h2>
-    <p>Proof of Travel does not try to be another reconciliation engine. Instead, it produces a thin, deterministic, independently verifiable timeline of ticket lifecycle events. When source systems agree, a proof is generated and anchored. When they disagree, no proof is generated — and the absence of a proof is itself a useful operational signal.</p>
-
-    <h3>What this looks like in practice</h3>
-    <ul>
-      <li><strong>Issuance proofs</strong> show that a ticket was, in fact, issued — useful when downstream systems lose context.</li>
-      <li><strong>Departure proofs</strong> confirm the leg was operated, settling the most common dispute category.</li>
-      <li><strong>Reconciliation proofs</strong> confirm that settlement signals from independent sources converged — a high-quality input to insurance and chargeback workflows.</li>
-      <li><strong>Refund proofs</strong> confirm that funds movement and ticket-state changes are operationally consistent.</li>
-    </ul>
-
-    <h2>Outcomes</h2>
-    <p>In the disruption scenarios we have modelled and operated against:</p>
-    <ul>
-      <li>Insurance claim resolution time is materially shortened because the timeline is no longer in dispute.</li>
-      <li>Chargeback defence improves because acquirers receive a public, verifiable reference instead of an internal claim.</li>
-      <li>Audit and regulatory reporting becomes simpler because the underlying event data has an independent attestation.</li>
-      <li>Customer dispute load decreases because the operational timeline is consistent across stakeholders.</li>
-    </ul>
-
-    <h2>Why an independent layer matters</h2>
-    <p>A reconciliation layer owned by any single participant — airline, GDS, agency, settlement framework — is structurally unsuited to settle disputes between participants. PoT is independent by design. It introduces no new trusted third party; instead, the proof itself is verifiable using only public information and a deterministic re-derivation.</p>
+    <p>Each case focuses on a specific problem that exists today in travel operations and compliance, and shows how PoT provides objective, privacy-preserving evidence that can be verified independently — now and in the future.</p>
+    <p><strong>Proof of Travel does not replace existing systems.</strong> It complements them by providing a durable reference layer that outlives platforms, vendors, and formats.</p>
   </div>
 </section>
 
 <hr class="divider">
 
 <section>
-  <p class="s-eye">Related</p>
-  <h2 class="s-title">Read more</h2>
-  <div class="doc-list" style="margin-top:1rem">
-    <div class="doc-card">
-      <span class="doc-meta">Protocol</span>
-      <div class="doc-title">How the protocol works</div>
-      <div class="doc-body">Signal capture, verification thresholds, deterministic proof construction, and public anchoring.</div>
-      <div class="doc-foot"><span>Page</span><a href="/protocol.html">Read →</a></div>
+
+  <!-- ── CASE STUDY 1 ── -->
+  <div class="cs-row">
+    <div class="cs-media">
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="/assets/videos/case-study-1.jpg">
+          <source src="/assets/videos/case-study-1.mp4" type="video/mp4">
+          Your browser doesn't support inline video.
+        </video>
+      </div>
     </div>
-    <div class="doc-card">
-      <span class="doc-meta">Integration</span>
-      <div class="doc-title">For consolidators</div>
-      <div class="doc-body">Three lightweight integration paths that don't disrupt your existing data flows.</div>
-      <div class="doc-foot"><span>Page</span><a href="/consolidators.html">Read →</a></div>
-    </div>
-    <div class="doc-card">
-      <span class="doc-meta">Documentation</span>
-      <div class="doc-title">Whitepapers</div>
-      <div class="doc-body">Foundational protocol, AERO incentive layer, privacy &amp; compliance brief, integration guide.</div>
-      <div class="doc-foot"><span>Page</span><a href="/whitepapers.html">Read →</a></div>
+    <div class="cs-text">
+      <div class="cs-num">Case Study #1</div>
+      <h2 class="cs-title">Verifying a journey — without paperwork</h2>
+      <div class="cs-body">
+        <p>Paperwork can fail. Independent proof shouldn't.</p>
+        <p>This is how Proof of Travel verifies a journey — without relying on screenshots or PDFs.</p>
+      </div>
     </div>
   </div>
+
+  <!-- ── CASE STUDY 2 ── -->
+  <div class="cs-row reverse">
+    <div class="cs-media">
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="/assets/videos/case-study-2.jpg">
+          <source src="/assets/videos/case-study-2.mp4" type="video/mp4">
+          Your browser doesn't support inline video.
+        </video>
+      </div>
+    </div>
+    <div class="cs-text">
+      <div class="cs-num">Case Study #2</div>
+      <h2 class="cs-title">Independent verification during a corporate audit</h2>
+      <div class="cs-body">
+        <p>This scenario illustrates how Proof of Travel can be used during a corporate audit to independently verify that travel activity occurred as recorded, without relying on internal screenshots or manual exports.</p>
+        <p>PoT provides auditors with a neutral, verifiable reference that exists outside corporate and supplier systems.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CASE STUDY 3 ── -->
+  <div class="cs-row">
+    <div class="cs-media">
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="/assets/videos/case-study-3.jpg">
+          <source src="/assets/videos/case-study-3.mp4" type="video/mp4">
+          Your browser doesn't support inline video.
+        </video>
+      </div>
+    </div>
+    <div class="cs-text">
+      <div class="cs-num">Case Study #3</div>
+      <h2 class="cs-title">A verification layer that outlasts platforms</h2>
+      <div class="cs-body">
+        <p>This example demonstrates how Proof of Travel remains verifiable even when legacy booking, airline, or consolidator systems are upgraded, merged, or retired.</p>
+        <p>PoT is designed as a long-lived verification layer that outlasts platforms, vendors, and formats.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CASE STUDY 4 ── -->
+  <div class="cs-row reverse">
+    <div class="cs-media">
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="/assets/videos/case-study-4.jpg">
+          <source src="/assets/videos/case-study-4.mp4" type="video/mp4">
+          Your browser doesn't support inline video.
+        </video>
+      </div>
+    </div>
+    <div class="cs-text">
+      <div class="cs-num">Case Study #4</div>
+      <h2 class="cs-title">Dispute resolution with neutral evidence</h2>
+      <div class="cs-body">
+        <p>This case explores a common dispute scenario where different systems present conflicting versions of the same travel record.</p>
+        <p>Proof of Travel does not resolve disputes, but provides independent evidence of what was recorded and when — enabling objective verification without trusting a single party's data.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CASE STUDY 5 ── -->
+  <div class="cs-row">
+    <div class="cs-media">
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline poster="/assets/videos/case-study-5.jpg">
+          <source src="/assets/videos/case-study-5.mp4" type="video/mp4">
+          Your browser doesn't support inline video.
+        </video>
+      </div>
+    </div>
+    <div class="cs-text">
+      <div class="cs-num">Case Study #5</div>
+      <h2 class="cs-title">Ecosystem-level oversight across issuers</h2>
+      <div class="cs-body">
+        <p>This scenario shows how Proof of Travel can support ecosystem-level oversight across multiple issuers, platforms, and systems.</p>
+        <p>By anchoring cryptographic commitments outside issuer infrastructure, PoT enables independent verification while preserving operational autonomy and data privacy.</p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <div class="cta-wrap">
   <div class="cta-inner">
     <div class="cta-badge">Operated by Travel Information Network (TIN)</div>
-    <h2 class="cta-title">Want to discuss your disruption use case?</h2>
+    <h2 class="cta-title">Want to discuss your scenario?</h2>
     <p class="cta-sub">We work with insurers, consolidators, agencies, and auditors to design proof-of-travel workflows around real disruption events.</p>
     <div class="cta-btns">
       <a href="mailto:info@proofoftravel.io" class="btn-w">Get in touch →</a>

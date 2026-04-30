@@ -7,7 +7,7 @@
 <meta name="description" content="A neutral verification protocol for real-world travel events. PoT cryptographically anchors verified travel lifecycle events without altering existing booking, ticketing, or settlement workflows.">
 <link rel="canonical" href="https://proofoftravel.io/">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -27,6 +27,7 @@
     <li><a href="/whitepapers.html">Whitepapers</a></li>
     <li><a href="/case-study.html">Case Study</a></li>
     <li><a href="/qa.html">Q&amp;A</a></li>
+    <li><a href="/privacy.html">Privacy</a></li>
   </ul>
   <a href="mailto:info@proofoftravel.io" class="n-cta">Contact Us</a>
 </nav>
@@ -93,7 +94,7 @@
         </div>
         <div class="feed-foot">
           <span class="feed-foot-l">Public blockchain infrastructure</span>
-          <span class="feed-foot-r">ETH Mainnet</span>
+          <span class="feed-foot-r">Polygon · EVM</span>
         </div>
       </div>
     </div>
@@ -132,7 +133,7 @@
       <div class="ls-logo-pill"><span class="ls-logo-text">Travelport</span></div>
       <div class="ls-logo-pill"><span class="ls-logo-text">IATA BSP</span></div>
       <div class="ls-logo-pill"><span class="ls-logo-text">ARC</span></div>
-      <div class="ls-logo-pill"><span class="ls-logo-text">Blockchain / ETH</span></div>
+      <div class="ls-logo-pill"><span class="ls-logo-text">Polygon (EVM)</span></div>
     </div>
   </div>
 </div>
@@ -146,14 +147,11 @@
       <p class="s-body">PoT operates post-issuance and post-reconciliation — only anchoring events after verified operational signals are available. Deterministic, auditable, conservative.</p>
       <a href="/protocol.html" class="btn-p">Watch the overview →</a>
     </div>
-    <div class="photo-frame video-thumb" onclick="window.open('https://proofoftravel.io','_blank')">
-      <img
-        src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/thumbnails/thumbnail-03c2ec2c-dcd7-4452-ae8f-87f1336d3dd1.png"
-        alt="Protocol overview video"
-        onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg><span>Video overview</span></div>'">
-      <div class="video-play">
-        <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
-      </div>
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline poster="/assets/videos/overview.jpg">
+        <source src="/assets/videos/overview.mp4" type="video/mp4">
+        Your browser doesn't support inline video.
+      </video>
     </div>
   </div>
 </div>
@@ -193,19 +191,16 @@
 <section>
   <p class="s-eye">Case study</p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center">
-    <div class="photo-frame video-thumb" onclick="window.open('https://proofoftravel.io','_blank')">
-      <img
-        src="https://img1.wsimg.com/isteam/ip/a270495b-ff35-416d-af84-3cb2fa89a846/thumbnails/thumbnail-a51deb93-3d93-4583-94ec-e76074f748bd.png"
-        alt="Case study video"
-        onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg><span>Case study video</span></div>'">
-      <div class="video-play">
-        <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
-      </div>
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline poster="/assets/videos/case-study-1.jpg">
+        <source src="/assets/videos/case-study-1.mp4" type="video/mp4">
+        Your browser doesn't support inline video.
+      </video>
     </div>
     <div>
-      <h2 class="s-title">Airspace disruption &amp; data resilience</h2>
-      <p class="s-body">Sudden airspace closures cause travel records to diverge across airline, GDS, and consolidator systems. PoT provides an independent, verifiable timeline of ticket lifecycle events — helping organisations understand what happened and when, even during large-scale disruption.</p>
-      <a href="/case-study.html" class="btn-p">View case study →</a>
+      <h2 class="s-title">Verifying a journey — without paperwork</h2>
+      <p class="s-body">Paperwork can fail. Independent proof shouldn't. This is how Proof of Travel verifies a journey — without relying on screenshots or PDFs.</p>
+      <a href="/case-study.html" class="btn-p">View all 5 case studies →</a>
     </div>
   </div>
 </section>

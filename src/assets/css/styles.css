@@ -44,6 +44,24 @@ nav{
 .n-cta{font-size:.72rem;font-weight:600;background:var(--navy);color:#fff;padding:.42rem 1rem;border-radius:5px;text-decoration:none;letter-spacing:.02em;white-space:nowrap;transition:background .15s;flex-shrink:0}
 .n-cta:hover{background:var(--navy-mid)}
 
+/* ── HAMBURGER TOGGLE (mobile only) ── */
+.n-toggle{
+  display:none;
+  background:transparent;border:none;cursor:pointer;
+  width:40px;height:40px;padding:9px 8px;
+  flex-direction:column;justify-content:space-between;align-items:stretch;
+  margin-left:auto;
+}
+.n-toggle .n-bar{
+  display:block;height:2px;background:var(--navy);border-radius:2px;
+  transition:transform .25s ease, opacity .2s ease;
+  transform-origin:center;
+}
+.n-toggle[aria-expanded="true"] .n-bar:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.n-toggle[aria-expanded="true"] .n-bar:nth-child(2){opacity:0}
+.n-toggle[aria-expanded="true"] .n-bar:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.n-toggle:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:5px}
+
 /* ── HERO ── */
 .hero-wrap{
   background-color:var(--bg);
@@ -295,7 +313,33 @@ footer{background:var(--bg-white);border-top:1px solid var(--border);padding:1.1
 @media(max-width:768px){
   nav{padding:0 1rem;height:64px}
   .n-logo img{height:44px}
-  .n-links{display:none}
+
+  /* Hamburger button visible */
+  .n-toggle{display:flex}
+
+  /* Nav links become a full-width drawer dropping down from the nav */
+  .n-links{
+    display:none;
+    position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:var(--bg-white);
+    border-bottom:1px solid var(--border);
+    box-shadow:0 8px 16px rgba(13,27,46,.06);
+    padding:.4rem 0;margin:0;
+    max-height:calc(100vh - 64px);overflow-y:auto;
+  }
+  .n-links.is-open{display:flex}
+  .n-links li{width:100%}
+  .n-links a{
+    display:block;
+    padding:.95rem 1.25rem;
+    font-size:.78rem;letter-spacing:.08em;
+    border-bottom:1px solid #f1f3f6;
+  }
+  .n-links li:last-child a{border-bottom:none}
+
+  .n-cta{margin-left:.5rem}
+
   .hero{grid-template-columns:1fr;gap:1.5rem;padding:2rem 1rem}
   .photo-inner{grid-template-columns:1fr;padding:1.5rem 1rem}
   .trust-inner{justify-content:flex-start}
